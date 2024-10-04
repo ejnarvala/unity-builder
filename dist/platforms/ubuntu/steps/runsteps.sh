@@ -17,7 +17,7 @@ else
   echo "Skipping activation"
 fi
 
-source /steps/build.sh
+# source /steps/build.sh
 
 if [ "$SKIP_ACTIVATION" != "true" ]; then
   source /steps/return_license.sh

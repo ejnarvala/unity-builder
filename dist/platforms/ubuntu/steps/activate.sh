@@ -73,6 +73,8 @@ elif [[ -n "$UNITY_LICENSING_SERVER" ]]; then
   FLOATING_LICENSE=$(sed -n 2p <<< "$PARSEDFILE")
   FLOATING_LICENSE_TIMEOUT=$(sed -n 4p <<< "$PARSEDFILE")
 
+  echo "Current location: $(pwd)"
+  echo "Files: \n$(ls)"
   echo "Acquired floating license: \"$FLOATING_LICENSE\" with timeout $FLOATING_LICENSE_TIMEOUT"
   # Store the exit code from the verify command
   UNITY_EXIT_CODE=$?
